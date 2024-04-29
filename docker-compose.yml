@@ -33,16 +33,16 @@ services:
       - ./ez_addons:/mnt/extra-addons2
       - ./etc:/etc/odoo
     restart: always             # run as a service
-    networks:
-      - default
-      - odoo16-net
+#    networks:
+#      - default
+#      - odoo16-net
       
-networks:
-  default:
-    driver: bridge
-  odoo16-net:
-    name: ors_network
-    external: true
+#networks:
+#  default:
+#    driver: bridge
+#  odoo16-net:
+#    name: ors_network
+#    external: true
 
 ######################################
 # git submodule init 
